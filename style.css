@@ -1,1 +1,191 @@
+body, div, ul, nav, h1, h2, h3, header, li, a {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
 
+body {
+	font-family: 'Lato', sans-serif;
+}
+
+nav ul {
+	background: #111;
+	padding: 20px;
+}
+
+nav li a {
+	text-decoration: none;
+	color: #fff;
+}
+
+nav li {
+	list-style: none;
+	padding: 10px 5px;
+	font-size: 18px;
+}
+
+.icono-del-menu {
+	color: #fff;
+	background: #111;
+	text-align: right;
+	padding: 10px 20px;
+	font-size: 24px;
+	position: fixed;
+	z-index: 100;
+	width: 100vw;
+}
+
+.button-link {
+	background: #fff;
+	color: #000;
+	font-size: 16px;
+	padding: 6px 12px;
+}
+
+.different-li {
+	margin-top: 10px;
+}
+
+#menu {
+	transition: margin-top 1s;
+	position: fixed;
+	z-index: 10;
+	width: 100vw;
+	margin-top: -80%;
+	box-shadow: 0px 0px 10px #000;
+}
+
+header {
+	height: 100vh;
+}
+
+.dalto-banner {
+	display: flex;
+	height: 100vh;
+	text-align: center;
+	flex-direction: column;
+	background: url(img/bg.jpg);
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	padding-top: 44px;
+}
+
+.dalto-banner__info {
+	flex-grow: 1;
+	display: flex;
+}
+
+.dalto-banner__info-container {
+	margin: auto;
+}
+
+.dalto-banner h1 {
+	padding: 10px;
+}
+
+.dalto-banner h2 {
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.dalto-banner img {
+	width: 160px;
+	height: 160px;
+	border-radius: 50%;
+	filter: drop-shadow(1px 1px 10px #000);
+}
+
+.dalto-banner .flecha {
+	margin: auto;
+	padding: 40px;
+	font-size: 60px;
+}
+
+.flecha a {
+	color: #fff;
+	font-size: 60px;
+	transition: color 0.12s;
+}
+
+.flecha a:hover {
+	color: #aaa;
+}
+
+.flecha a:active {
+	color: #aaa;
+}
+
+#Curso {
+	height: 100vh;
+	text-align: center;
+}
+
+.cursos-texto h2 {
+	padding: 30px;
+	text-align: center;
+}
+
+.cursos-container a {
+	text-decoration: none;
+	color: #fff;
+	box-shadow: 0px 0px 8px #0009;
+	display: block;
+	background-size: cover;
+	width: 256px;
+	height: 144px;
+	margin: 20px auto;
+}
+
+.curso-data {
+	height: 100%;
+	width: 100%;
+	background: #000b;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	transition: opacity 0.12s;
+}
+
+.curso-html {
+	background: url(img/html.jpg);
+}
+
+.curso-css {
+	background: url(img/css.jpg);
+}
+
+.curso-js {
+	background: url(img/js.jpg);
+}
+
+.curso-data a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.curso-data h2 {
+	font-size: 20px;
+}
+
+.curso-data p {
+	font-size: 12px;
+	margin-top: 2px;
+}
+
+.curso-data:hover {
+	opacity: 0;
+}
+
+.cursos-container .button-otros {
+	background: #000;
+	height: auto;
+	width: 200px;
+	padding: 12px 16px;
+	margin: 40px;
+	letter-spacing: 2px;
+	margin-top: 40px;
+	font-size: 14px;
+	box-shadow: none;
+}
