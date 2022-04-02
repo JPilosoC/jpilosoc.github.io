@@ -117,8 +117,8 @@ header {
 }
 
 #Curso {
-	min-height: 100vh;
 	text-align: center;
+	padding: 40px 0;
 }
 
 .cursos-texto h2 {
