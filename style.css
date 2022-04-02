@@ -1,4 +1,4 @@
-body, div, ul, nav, h1, h2, h3, header, li, a {
+body, form, div, ul, nav, h1, h2, h3, header, li, a {
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
@@ -6,6 +6,7 @@ body, div, ul, nav, h1, h2, h3, header, li, a {
 
 body {
 	font-family: 'Lato', sans-serif;
+	overflow-x: hidden;
 }
 
 nav ul {
@@ -124,6 +125,7 @@ header {
 .cursos-texto h2 {
 	padding: 30px;
 	text-align: center;
+	padding-bottom: 10px;
 }
 
 .cursos-container a {
@@ -190,10 +192,10 @@ header {
 }
 
 #Contacto {
-	min-height: 100vh;
 	background: #000;
 	color: #fff;
 	text-align: center;
+	padding-bottom: 60px;
 }
 
 #Contacto h2 {
@@ -311,4 +313,120 @@ header {
 	font-size: 12px;
 	letter-spacing: 2px;
 	color: #555;
+}
+
+/*----------- RESPONSIVE TO WEB -----------*/
+
+@media screen and (min-width: 1280px) {
+	.icono-del-menu {
+		display: none;
+	}
+
+	#menu {
+		position: absolute;
+		margin-top: 0;
+		padding: 10px;
+		transition: margin-top 0s;
+		box-shadow: none;
+		background: linear-gradient(to bottom, #000f, transparent);
+		text-align: center;
+	}
+
+	#menu li {
+		display: inline-block;
+		margin: 20px;
+	}
+
+	.dalto-banner h1 {
+		font-size: 48px;
+	}
+
+	.dalto-banner h2 {
+	font-size: 18px;
+	font-weight: 400;
+	}
+
+	.dalto-banner img {
+		width: 260px;
+		height: 260px;
+		border-radius: 50%;
+		filter: drop-shadow(1px 1px 15px #000);
+		margin-top: 20px;
+	}
+	
+	.dalto-banner .flecha {
+		margin: auto;
+		padding: 40px;
+		font-size: 80px;
+	}
+
+	.cursos-container a {
+		display: inline-block;
+		width: 320px;
+		height: 180px;
+		margin: 30px;
+	}
+
+	.cursos-container {
+		padding: 50px 0;
+	}
+
+	#Contacto .form-container {
+		flex-direction: row;
+		align-items: center;
+		margin: auto;
+	}
+
+	#Contacto input, #Contacto textarea {
+		width: 100%;
+		font-size: 20px;
+		padding: 12px;
+	}
+
+	#Contacto .form-inputs {
+		flex-grow: 1;
+		padding: 20px;
+	}
+
+	#Contacto .form-img {
+		display: flex;
+		padding: 20px;
+		height: 100%;
+		margin-left: 60px;
+	}
+
+	#Contacto h2 {
+		font-size: 40px;
+	}
+
+	.form-img i {
+		font-size: 300px;
+		margin: auto;
+	}
+
+	#Contacto {
+		padding: 60px;
+		padding-top: 0;
+	}
+
+	.form-container {
+		max-width: 1300px;
+	}
+
+	#footer input {
+		padding: 12px;
+		font-size: 20px;
+		display: inline-block;
+		width: 700px;
+		border-left: 4px solid #fff;
+	}
+
+	#footer {
+		min-width: 700px;
+	}
+
+	#footer .sub-to-newsletter {
+		width: auto;
+		margin-left: 10px;
+	}
 }
